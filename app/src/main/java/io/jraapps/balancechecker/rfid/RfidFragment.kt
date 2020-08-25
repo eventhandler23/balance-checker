@@ -1,0 +1,24 @@
+package io.jraapps.balancechecker.rfid
+
+import android.os.Bundle
+import androidx.fragment.app.Fragment
+import android.view.LayoutInflater
+import android.view.View
+import android.view.ViewGroup
+import io.jraapps.balancechecker.R
+
+class RfidFragment : Fragment() {
+
+    override fun onCreateView(
+        inflater: LayoutInflater, container: ViewGroup?,
+        savedInstanceState: Bundle?
+    ): View? {
+        // Inflate the layout for this fragment
+        return inflater.inflate(R.layout.fragment_rfid, container, false)
+    }
+
+    companion object {
+        @JvmStatic
+        fun newInstance() = RfidFragment()
+    }
+}
